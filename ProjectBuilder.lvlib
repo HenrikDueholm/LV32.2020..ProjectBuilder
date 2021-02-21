@@ -27,6 +27,12 @@
 	</Item>
 	<Item Name="Class" Type="Folder">
 		<Item Name="Action" Type="Folder">
+			<Item Name="Build Named Build Specification.lvclass" Type="Folder">
+				<Item Name="Data" Type="Folder">
+					<Item Name="Build Named Build Specification Data.lvclass" Type="LVClass" URL="../Class/Build Named Build Specification/Build Named Build Specification Data/Build Named Build Specification Data.lvclass"/>
+				</Item>
+				<Item Name="Build Named Build Specification.lvclass" Type="LVClass" URL="../Class/Build Named Build Specification/Build Named Build Specification.lvclass"/>
+			</Item>
 			<Item Name="Project Action.lvclass" Type="LVClass" URL="../Class/Action/Project Action/Project Action.lvclass"/>
 		</Item>
 		<Item Name="Data" Type="Folder">
@@ -37,4 +43,5 @@
 		</Item>
 	</Item>
 	<Item Name="Build Project.vi" Type="VI" URL="../Build Project.vi"/>
+	<Item Name="CLI Build from Project Path.vi" Type="VI" URL="../CLI Build from Project Path.vi"/>
 </Library>
