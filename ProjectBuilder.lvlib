@@ -33,6 +33,15 @@
 				</Item>
 				<Item Name="Build Named Build Specification.lvclass" Type="LVClass" URL="../Class/Build Named Build Specification/Build Named Build Specification.lvclass"/>
 			</Item>
+			<Item Name="Set Version from Git Tag" Type="Folder">
+				<Item Name="Utility" Type="Folder">
+					<Item Name="Get Git Tag from Path.vi" Type="VI" URL="../Class/Set Version from Git Tag/Utility/Get Git Tag from Path.vi"/>
+				</Item>
+				<Item Name="Data" Type="Folder">
+					<Item Name="Version Data.lvclass" Type="LVClass" URL="../Class/Set Version from Git Tag/Version Data/Version Data.lvclass"/>
+				</Item>
+				<Item Name="Set Version from Git Tag.lvclass" Type="LVClass" URL="../Class/Set Version from Git Tag/Set Version from Git Tag.lvclass"/>
+			</Item>
 			<Item Name="Project Action.lvclass" Type="LVClass" URL="../Class/Action/Project Action/Project Action.lvclass"/>
 		</Item>
 		<Item Name="Data" Type="Folder">
