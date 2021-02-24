@@ -1,6 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="20008000">
 	<Item Name="My Computer" Type="My Computer">
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -10,6 +11,9 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="PPLSource" Type="Folder">
+			<Item Name="PPL Version Issue.lvlib" Type="Library" URL="../PPL issue/PPL Version Issue.lvlib"/>
+		</Item>
 		<Item Name="HDH.ProjectBuilder.lvlibp" Type="LVLibp" URL="../../../PPL/HDH.ProjectBuilder.lvlibp">
 			<Item Name="Interface" Type="Folder">
 				<Item Name="Project Action Interface.lvclass" Type="LVClass" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Interface/Project Action Interface/Project Action Interface.lvclass"/>
@@ -58,53 +62,7 @@
 			<Item Name="HDH.ProjectBuilder_NI_FileType.lvlib" Type="Library" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/lvfile.llb/HDH.ProjectBuilder_NI_FileType.lvlib"/>
 			<Item Name="HDH.ProjectBuilder_NI_PackedLibraryUtility.lvlib" Type="Library" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/LVLibp/HDH.ProjectBuilder_NI_PackedLibraryUtility.lvlib"/>
 			<Item Name="HDH.ProjectBuilder_NI_App_Builder_API.lvlib" Type="Library" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/AB_API_Simple/HDH.ProjectBuilder_NI_App_Builder_API.lvlib"/>
-			<Item Name="HDH.ProjectBuilder_Error Cluster From Error Code.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_Error Cluster From Error Code.vi"/>
-			<Item Name="HDH.ProjectBuilder_IB_RW_Project_PropBag_Action.ctl" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/IB_RW_Project/HDH.ProjectBuilder_IB_RW_Project_PropBag_Action.ctl"/>
-			<Item Name="HDH.ProjectBuilder_AB_RW_Project_PropBag_Action.ctl" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/RW_Project/HDH.ProjectBuilder_AB_RW_Project_PropBag_Action.ctl"/>
-			<Item Name="HDH.ProjectBuilder_mxLvDebugDisplayCaller.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/API/HDH.ProjectBuilder_mxLvDebugDisplayCaller.vi"/>
-			<Item Name="HDH.ProjectBuilder_mxLvNIIM.ctl" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/API/HDH.ProjectBuilder_mxLvNIIM.ctl"/>
-			<Item Name="HDH.ProjectBuilder_ItemRef.ctl" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/API/HDH.ProjectBuilder_ItemRef.ctl"/>
-			<Item Name="HDH.ProjectBuilder_AB_RW_Project_Build_Data.ctl" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/RW_Project/HDH.ProjectBuilder_AB_RW_Project_Build_Data.ctl"/>
-			<Item Name="HDH.ProjectBuilder_AB_Relative_Path_Type.ctl" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/HDH.ProjectBuilder_AB_Relative_Path_Type.ctl"/>
-			<Item Name="HDH.ProjectBuilder_AB_RW_Convert_Path_to_Absolute.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/RW_Project/HDH.ProjectBuilder_AB_RW_Convert_Path_to_Absolute.vi"/>
-			<Item Name="HDH.ProjectBuilder_provcom_Utility_IsEmptyOrWhiteSpace.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/Common/HDH.ProjectBuilder_provcom_Utility_IsEmptyOrWhiteSpace.vi"/>
-			<Item Name="HDH.ProjectBuilder_provcom_GetTargetOS.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/Common/HDH.ProjectBuilder_provcom_GetTargetOS.vi"/>
-			<Item Name="HDH.ProjectBuilder_Search and Replace Pattern.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_Search and Replace Pattern.vi"/>
-			<Item Name="HDH.ProjectBuilder_Is Name Multiplatform.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/libraryn.llb/HDH.ProjectBuilder_Is Name Multiplatform.vi"/>
-			<Item Name="HDH.ProjectBuilder_provcom_CheckForInvalidCharacters.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/Common/HDH.ProjectBuilder_provcom_CheckForInvalidCharacters.vi"/>
-			<Item Name="HDH.ProjectBuilder_Get File Extension.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/libraryn.llb/HDH.ProjectBuilder_Get File Extension.vi"/>
-			<Item Name="HDH.ProjectBuilder_AB_UI_Change_Path_from_Label.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/Builds/AppBuilder/HDH.ProjectBuilder_AB_UI_Change_Path_from_Label.vi"/>
-			<Item Name="HDH.ProjectBuilder_Compare Two Paths.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/libraryn.llb/HDH.ProjectBuilder_Compare Two Paths.vi"/>
-			<Item Name="HDH.ProjectBuilder_AB_RW_Convert_Path_to_Relative.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/RW_Project/HDH.ProjectBuilder_AB_RW_Convert_Path_to_Relative.vi"/>
-			<Item Name="HDH.ProjectBuilder_CDK_sTypeDef_ProductVersion.ctl" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/Builds/Installer/HDH.ProjectBuilder_CDK_sTypeDef_ProductVersion.ctl"/>
-			<Item Name="HDH.ProjectBuilder_CDK_sTypeDef_Languages.ctl" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/Builds/Installer/HDH.ProjectBuilder_CDK_sTypeDef_Languages.ctl"/>
-			<Item Name="HDH.ProjectBuilder_IB_RW_Project_Installer_Data.ctl" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/IB_RW_Project/HDH.ProjectBuilder_IB_RW_Project_Installer_Data.ctl"/>
-			<Item Name="HDH.ProjectBuilder_CDK_Utility_GetSetStringVersion.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/Builds/Installer/HDH.ProjectBuilder_CDK_Utility_GetSetStringVersion.vi"/>
-			<Item Name="HDH.ProjectBuilder_IB_RW_Convert_Path_to_Absolute.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/IB_RW_Project/HDH.ProjectBuilder_IB_RW_Convert_Path_to_Absolute.vi"/>
-			<Item Name="HDH.ProjectBuilder_CDK_GLOBAL_STRINGS.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/Builds/Installer/HDH.ProjectBuilder_CDK_GLOBAL_STRINGS.vi"/>
-			<Item Name="HDH.ProjectBuilder_IB_RW_Convert_Path_to_Relative.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/IB_RW_Project/HDH.ProjectBuilder_IB_RW_Convert_Path_to_Relative.vi"/>
-			<Item Name="HDH.ProjectBuilder_IB_Relative_Path_Type.ctl" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/IB_RW_Project/HDH.ProjectBuilder_IB_Relative_Path_Type.ctl"/>
-			<Item Name="HDH.ProjectBuilder_IB_2019_2018_RW_Convert_Path_to_Relative.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/IB_RW_Project/Compatibility/HDH.ProjectBuilder_IB_2019_2018_RW_Convert_Path_to_Relative.vi"/>
-			<Item Name="HDH.ProjectBuilder_mxLvErrorHandler.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/API/HDH.ProjectBuilder_mxLvErrorHandler.vi"/>
-			<Item Name="HDH.ProjectBuilder_mxLvSetStringProperty.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/API/HDH.ProjectBuilder_mxLvSetStringProperty.vi"/>
-			<Item Name="HDH.ProjectBuilder_mxLvSetIntProperty.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/API/HDH.ProjectBuilder_mxLvSetIntProperty.vi"/>
-			<Item Name="HDH.ProjectBuilder_mxLvGetItem.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/API/HDH.ProjectBuilder_mxLvGetItem.vi"/>
-			<Item Name="HDH.ProjectBuilder_mxLvGetNIIM.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/API/HDH.ProjectBuilder_mxLvGetNIIM.vi"/>
-			<Item Name="HDH.ProjectBuilder_mxLvGetProjectRef.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/API/HDH.ProjectBuilder_mxLvGetProjectRef.vi"/>
-			<Item Name="HDH.ProjectBuilder_mxLvGetTarget.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/API/HDH.ProjectBuilder_mxLvGetTarget.vi"/>
-			<Item Name="HDH.ProjectBuilder_AB_RW_Convert_Path_Tags.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/RW_Project/HDH.ProjectBuilder_AB_RW_Convert_Path_Tags.vi"/>
-			<Item Name="HDH.ProjectBuilder_mxLvDeleteProperty.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/API/HDH.ProjectBuilder_mxLvDeleteProperty.vi"/>
-			<Item Name="HDH.ProjectBuilder_mxLvSetRefProperty.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/API/HDH.ProjectBuilder_mxLvSetRefProperty.vi"/>
-			<Item Name="HDH.ProjectBuilder_mxLvSetPathProperty.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/API/HDH.ProjectBuilder_mxLvSetPathProperty.vi"/>
-			<Item Name="HDH.ProjectBuilder_mxLvSetBooleanProperty.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/API/HDH.ProjectBuilder_mxLvSetBooleanProperty.vi"/>
-			<Item Name="HDH.ProjectBuilder_mxLvGetRefProperty.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/API/HDH.ProjectBuilder_mxLvGetRefProperty.vi"/>
-			<Item Name="HDH.ProjectBuilder_mxLvGetPathProperty.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/API/HDH.ProjectBuilder_mxLvGetPathProperty.vi"/>
-			<Item Name="HDH.ProjectBuilder_mxLvGetIntProperty.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/API/HDH.ProjectBuilder_mxLvGetIntProperty.vi"/>
-			<Item Name="HDH.ProjectBuilder_mxLvGetBooleanProperty.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/API/HDH.ProjectBuilder_mxLvGetBooleanProperty.vi"/>
-			<Item Name="HDH.ProjectBuilder_mxLvGetStringProperty.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/API/HDH.ProjectBuilder_mxLvGetStringProperty.vi"/>
-			<Item Name="HDH.ProjectBuilder_mxLvGetProjectPath.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/API/HDH.ProjectBuilder_mxLvGetProjectPath.vi"/>
-			<Item Name="HDH.ProjectBuilder_IB_RW_Project_Installer.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/IB_RW_Project/HDH.ProjectBuilder_IB_RW_Project_Installer.vi"/>
-			<Item Name="HDH.ProjectBuilder_AB_RW_Project_Build_Info.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/RW_Project/HDH.ProjectBuilder_AB_RW_Project_Build_Info.vi"/>
+			<Item Name="HDH.ProjectBuilder_Clear Errors.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_Clear Errors.vi"/>
 			<Item Name="HDH.ProjectBuilder_Invoke BuildTarget.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/HDH.ProjectBuilder_Invoke BuildTarget.vi"/>
 			<Item Name="HDH.ProjectBuilder_provcom_StringGlobals.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/Common/HDH.ProjectBuilder_provcom_StringGlobals.vi"/>
 			<Item Name="HDH.ProjectBuilder_DialogType.ctl" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_DialogType.ctl"/>
@@ -113,12 +71,12 @@
 			<Item Name="HDH.ProjectBuilder_Set String Value.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_Set String Value.vi"/>
 			<Item Name="HDH.ProjectBuilder_GetRTHostConnectedProp.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_GetRTHostConnectedProp.vi"/>
 			<Item Name="HDH.ProjectBuilder_Error Code Database.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_Error Code Database.vi"/>
+			<Item Name="HDH.ProjectBuilder_Search and Replace Pattern.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_Search and Replace Pattern.vi"/>
 			<Item Name="HDH.ProjectBuilder_Find Tag.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_Find Tag.vi"/>
 			<Item Name="HDH.ProjectBuilder_Set Bold Text.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_Set Bold Text.vi"/>
 			<Item Name="HDH.ProjectBuilder_Format Message String.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_Format Message String.vi"/>
 			<Item Name="HDH.ProjectBuilder_ErrWarn.ctl" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_ErrWarn.ctl"/>
 			<Item Name="HDH.ProjectBuilder_eventvkey.ctl" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/event_ctls.llb/HDH.ProjectBuilder_eventvkey.ctl"/>
-			<Item Name="HDH.ProjectBuilder_Clear Errors.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_Clear Errors.vi"/>
 			<Item Name="HDH.ProjectBuilder_DialogTypeEnum.ctl" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_DialogTypeEnum.ctl"/>
 			<Item Name="HDH.ProjectBuilder_Details Display Dialog.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_Details Display Dialog.vi"/>
 			<Item Name="HDH.ProjectBuilder_LVRectTypeDef.ctl" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/miscctls.llb/HDH.ProjectBuilder_LVRectTypeDef.ctl"/>
@@ -140,7 +98,9 @@
 			<Item Name="HDH.ProjectBuilder_GetTargetBuildSpecs (project reference).vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/HDH.ProjectBuilder_GetTargetBuildSpecs (project reference).vi"/>
 			<Item Name="HDH.ProjectBuilder_GetTargetBuildSpecs.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/HDH.ProjectBuilder_GetTargetBuildSpecs.vi"/>
 			<Item Name="HDH.ProjectBuilder_System Exec.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Platform/system.llb/HDH.ProjectBuilder_System Exec.vi"/>
+			<Item Name="HDH.ProjectBuilder_Error Cluster From Error Code.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_Error Cluster From Error Code.vi"/>
 			<Item Name="HDH.ProjectBuilder_Get LV Class Path.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/LVClass/HDH.ProjectBuilder_Get LV Class Path.vi"/>
+			<Item Name="HDH.ProjectBuilder_Get File Extension.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/libraryn.llb/HDH.ProjectBuilder_Get File Extension.vi"/>
 			<Item Name="HDH.ProjectBuilder_8.6CompatibleGlobalVar.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/config.llb/HDH.ProjectBuilder_8.6CompatibleGlobalVar.vi"/>
 			<Item Name="HDH.ProjectBuilder_Check if File or Folder Exists.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/libraryn.llb/HDH.ProjectBuilder_Check if File or Folder Exists.vi"/>
 			<Item Name="HDH.ProjectBuilder_LVNumericRepresentation.ctl" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/numeric/HDH.ProjectBuilder_LVNumericRepresentation.ctl"/>
@@ -202,6 +162,8 @@
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
+				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 			</Item>
 			<Item Name="AB_UI_Change_Path_from_Label.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/AppBuilder/AB_UI_Change_Path_from_Label.vi"/>
 			<Item Name="CDK_GLOBAL_STRINGS.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Builds/Installer/CDK_GLOBAL_STRINGS.vi"/>
@@ -295,7 +257,6 @@
 				<Item Name="Remove all Cached Files from System.vi" Type="VI" URL="../../../PPL/HDH.ClassLoader.lvlibp/Remove all Cached Files from System.vi"/>
 				<Item Name="Un-load.vi" Type="VI" URL="../../../PPL/HDH.ClassLoader.lvlibp/Un-load.vi"/>
 			</Item>
-			<Item Name="HDH.ProjectBuilder_mxLvProvider.mxx" Type="Document" URL="../../../PPL/HDH.ProjectBuilder_mxLvProvider.mxx"/>
 			<Item Name="ItemRef.ctl" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/ItemRef.ctl"/>
 			<Item Name="mxLvDebugDisplayCaller.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/mxLvDebugDisplayCaller.vi"/>
 			<Item Name="mxLvDeleteProperty.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/mxLvDeleteProperty.vi"/>
@@ -342,6 +303,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{683AEC4E-7B82-4B34-A0CD-5570217DBE78}</Property>
+				<Property Name="Bld_version.patch" Type="UInt">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">Test_Exe.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../Test_Exe_Build/NI_AB_PROJECTNAME.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
@@ -351,7 +313,7 @@
 				<Property Name="Destination[1].path" Type="Path">../Test_Exe_Build/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{9EC878E5-3220-4662-982A-98C3EC7AC75C}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{D7D7C718-5F1E-483C-A899-392875C6E3FE}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Test_Exe_Build VI.vi</Property>
@@ -366,6 +328,49 @@
 				<Property Name="TgtF_productName" Type="Str">Test_Exe</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{797E5A76-ED25-4D90-BE7C-B995A2C4A09A}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">Test_Exe.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+			<Item Name="Test_Exe_PPL" Type="Packed Library">
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{AAE7A393-FD15-4358-B7F1-D8EE0A516377}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Test_Exe_PPL</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../Test_Exe_Build/data</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{F53614A4-C85B-4358-B8EE-8A52939E3275}</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Test_Exe_PPL.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">../Test_Exe_Build/data/Test_Exe_PPL.lvlibp</Property>
+				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../Test_Exe_Build/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
+				<Property Name="Source[0].itemID" Type="Str">{2748343E-B87D-463A-8917-65ADE240800E}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/PPLSource/PPL Version Issue.lvlib</Property>
+				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[1].Library.atomicCopy" Type="Bool">true</Property>
+				<Property Name="Source[1].Library.LVLIBPtopLevel" Type="Bool">true</Property>
+				<Property Name="Source[1].preventRename" Type="Bool">true</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">Library</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">Danfoss</Property>
+				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Test_Exe_PPL</Property>
+				<Property Name="TgtF_internalName" Type="Str">Test_Exe_PPL</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2021 Danfoss</Property>
+				<Property Name="TgtF_productName" Type="Str">Test_Exe_PPL</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{B5A7C94B-CB41-4A2D-818B-A5979E844D05}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Test_Exe_PPL.lvlibp</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 		</Item>
