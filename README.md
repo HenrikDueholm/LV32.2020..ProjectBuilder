@@ -1,5 +1,5 @@
 # LV32.2020..ProjectBuilder
-Source [LV32.2020..PPL.ProjectBuilder][1] (repository not created yet)
+Source for [LV32.2020..PPL.ProjectBuilder][1].
 Automate the test and build process.
 
 # Implemented Functions
