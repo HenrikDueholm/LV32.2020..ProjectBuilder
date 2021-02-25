@@ -1,0 +1,5 @@
+Path:
+C:\Program Files (x86)\National Instruments\LabVIEW 2020\vi.lib\addons\_JKI Toolkits\Caraya\classes\Test Runner\Linker.Find Tests and Suites.vi
+Modifications:
+Added check for lvlibp ORed with lvlib to support detection of PPL tests.
+The modified file can be found below in this folder.

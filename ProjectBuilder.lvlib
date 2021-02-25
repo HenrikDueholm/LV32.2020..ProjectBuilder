@@ -24,6 +24,7 @@
 			<Item Name="Load and Validate_Extract Number.vi" Type="VI" URL="../Sub/Private/Load and Validate_Extract Number.vi"/>
 		</Item>
 		<Item Name="Set Error if Not Development System.vi" Type="VI" URL="../Sub/Set Error if Not Development System.vi"/>
+		<Item Name="Get Date Time String.vi" Type="VI" URL="../Sub/Get Date Time String.vi"/>
 	</Item>
 	<Item Name="Class" Type="Folder">
 		<Item Name="Action" Type="Folder">
@@ -41,6 +42,12 @@
 					<Item Name="Version Data.lvclass" Type="LVClass" URL="../Class/Set Version from Git Tag/Version Data/Version Data.lvclass"/>
 				</Item>
 				<Item Name="Set Version from Git Tag.lvclass" Type="LVClass" URL="../Class/Set Version from Git Tag/Set Version from Git Tag.lvclass"/>
+			</Item>
+			<Item Name="Caraya Unit Test.lvclass" Type="Folder">
+				<Item Name="Data" Type="Folder">
+					<Item Name="Caraya Status Data.lvclass" Type="LVClass" URL="../Class/Caraya Unit Test/Caraya Status Data/Caraya Status Data.lvclass"/>
+				</Item>
+				<Item Name="Caraya Unit Test.lvclass" Type="LVClass" URL="../Class/Caraya Unit Test/Caraya Unit Test.lvclass"/>
 			</Item>
 			<Item Name="Project Action.lvclass" Type="LVClass" URL="../Class/Action/Project Action/Project Action.lvclass"/>
 		</Item>
