@@ -17,6 +17,7 @@
 		<Item Name="HDH.ProjectBuilder.lvlibp" Type="LVLibp" URL="../../../PPL/HDH.ProjectBuilder.lvlibp">
 			<Item Name="Interface" Type="Folder">
 				<Item Name="Project Action Interface.lvclass" Type="LVClass" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Interface/Project Action Interface/Project Action Interface.lvclass"/>
+				<Item Name="Local run of Caraya test.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Test/Local run of Caraya test.vi"/>
 			</Item>
 			<Item Name="Sub" Type="Folder">
 				<Item Name="Private" Type="Folder">
@@ -69,9 +70,6 @@
 			<Item Name="HDH.ProjectBuilder_NI_FileType.lvlib" Type="Library" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/lvfile.llb/HDH.ProjectBuilder_NI_FileType.lvlib"/>
 			<Item Name="HDH.ProjectBuilder_NI_PackedLibraryUtility.lvlib" Type="Library" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/LVLibp/HDH.ProjectBuilder_NI_PackedLibraryUtility.lvlib"/>
 			<Item Name="HDH.ProjectBuilder_NI_App_Builder_API.lvlib" Type="Library" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/AB_API_Simple/HDH.ProjectBuilder_NI_App_Builder_API.lvlib"/>
-			<Item Name="HDH.ProjectBuilder_Space Constant.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/dlg_ctls.llb/HDH.ProjectBuilder_Space Constant.vi"/>
-			<Item Name="HDH.ProjectBuilder_Create Directory Recursive.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/libraryn.llb/HDH.ProjectBuilder_Create Directory Recursive.vi"/>
-			<Item Name="HDH.ProjectBuilder_Get File Extension.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/libraryn.llb/HDH.ProjectBuilder_Get File Extension.vi"/>
 			<Item Name="HDH.ProjectBuilder_Clear Errors.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_Clear Errors.vi"/>
 			<Item Name="HDH.ProjectBuilder_Invoke BuildTarget.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/HDH.ProjectBuilder_Invoke BuildTarget.vi"/>
 			<Item Name="HDH.ProjectBuilder_provcom_StringGlobals.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/Common/HDH.ProjectBuilder_provcom_StringGlobals.vi"/>
@@ -108,6 +106,9 @@
 			<Item Name="HDH.ProjectBuilder_GetTargetBuildSpecs (project reference).vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/HDH.ProjectBuilder_GetTargetBuildSpecs (project reference).vi"/>
 			<Item Name="HDH.ProjectBuilder_GetTargetBuildSpecs.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/HDH.ProjectBuilder_GetTargetBuildSpecs.vi"/>
 			<Item Name="HDH.ProjectBuilder_System Exec.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Platform/system.llb/HDH.ProjectBuilder_System Exec.vi"/>
+			<Item Name="HDH.ProjectBuilder_Space Constant.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/dlg_ctls.llb/HDH.ProjectBuilder_Space Constant.vi"/>
+			<Item Name="HDH.ProjectBuilder_Create Directory Recursive.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/libraryn.llb/HDH.ProjectBuilder_Create Directory Recursive.vi"/>
+			<Item Name="HDH.ProjectBuilder_Get File Extension.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/libraryn.llb/HDH.ProjectBuilder_Get File Extension.vi"/>
 			<Item Name="HDH.ProjectBuilder_Error Cluster From Error Code.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_Error Cluster From Error Code.vi"/>
 			<Item Name="HDH.ProjectBuilder_Get LV Class Path.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/LVClass/HDH.ProjectBuilder_Get LV Class Path.vi"/>
 			<Item Name="HDH.ProjectBuilder_8.6CompatibleGlobalVar.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/config.llb/HDH.ProjectBuilder_8.6CompatibleGlobalVar.vi"/>
@@ -508,7 +509,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{683AEC4E-7B82-4B34-A0CD-5570217DBE78}</Property>
-				<Property Name="Bld_version.minor" Type="UInt">1</Property>
+				<Property Name="Bld_version.major" Type="UInt">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Test_Exe.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../Test_Exe_Build/NI_AB_PROJECTNAME.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>

@@ -432,7 +432,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Current projects/WS/PPL</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{4F01E147-CCF1-4F23-9E0E-BAD326F349EB}</Property>
-				<Property Name="Bld_version.build" Type="Int">5</Property>
+				<Property Name="Bld_version.build" Type="Int">7</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Caraya.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Current projects/WS/PPL/Caraya.lvlibp</Property>

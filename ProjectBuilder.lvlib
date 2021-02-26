@@ -12,6 +12,7 @@
 </Property>
 	<Item Name="Interface" Type="Folder">
 		<Item Name="Project Action Interface.lvclass" Type="LVClass" URL="../Interface/Project Action Interface/Project Action Interface.lvclass"/>
+		<Item Name="Local run of Caraya test.vi" Type="VI" URL="../Test/Local run of Caraya test.vi"/>
 	</Item>
 	<Item Name="Sub" Type="Folder">
 		<Item Name="Private" Type="Folder">
