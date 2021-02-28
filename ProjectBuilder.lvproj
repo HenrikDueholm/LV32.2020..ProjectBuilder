@@ -16,6 +16,9 @@
 			<Item Name="CLI Build from Project Path.bat" Type="Document" URL="../data/CLI Build from Project Path.bat"/>
 			<Item Name="CLI Build from Project Path_Example.bat" Type="Document" URL="../data/CLI Build from Project Path_Example.bat"/>
 		</Item>
+		<Item Name="Test" Type="Folder">
+			<Item Name="Local run of Caraya test.vi" Type="VI" URL="../Test/Local run of Caraya test.vi"/>
+		</Item>
 		<Item Name="Caraya.lvlibp" Type="LVLibp" URL="../../PPL/Caraya.lvlibp">
 			<Item Name="Test Manager" Type="Folder">
 				<Item Name="Basic Test Manager.lvclass" Type="LVClass" URL="../../PPL/Caraya.lvlibp/1abvi3w/vi.lib/addons/_JKI Toolkits/Caraya/classes/Basic Test Manager/Basic Test Manager.lvclass"/>
@@ -354,9 +357,12 @@
 				<Item Name="Un-load.vi" Type="VI" URL="../../PPL/HDH.ClassLoader.lvlibp/Un-load.vi"/>
 			</Item>
 			<Item Name="provcom_StringGlobals.vi" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/Common/provcom_StringGlobals.vi"/>
+			<Item Name="Run Action.vi" Type="VI" URL="../Class/Action/Project Action/Run Action.vi"/>
 			<Item Name="System" Type="VI" URL="System">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Write Action Success.vi" Type="VI" URL="../Class/Data/Report Data/Data Member Access/Write Action Success.vi"/>
+			<Item Name="Write Source Action.vi" Type="VI" URL="../Class/Data/Report Data/Data Member Access/Write Source Action.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="HDH.ProjectBuilder" Type="Packed Library">
@@ -370,7 +376,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5230E900-2CCF-45A7-8442-DAA7B24C6E9E}</Property>
-				<Property Name="Bld_version.build" Type="Int">23</Property>
+				<Property Name="Bld_version.build" Type="Int">24</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">HDH.ProjectBuilder.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">../PPL/HDH.ProjectBuilder.lvlibp</Property>

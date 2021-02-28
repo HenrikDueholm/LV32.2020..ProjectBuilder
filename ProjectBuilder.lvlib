@@ -11,21 +11,11 @@
 
 </Property>
 	<Item Name="Interface" Type="Folder">
-		<Item Name="Project Action Interface.lvclass" Type="LVClass" URL="../Interface/Project Action Interface/Project Action Interface.lvclass"/>
-		<Item Name="Local run of Caraya test.vi" Type="VI" URL="../Test/Local run of Caraya test.vi"/>
+		<Item Name="Action Interface.lvclass" Type="LVClass" URL="../Interface/Action Interface/Action Interface.lvclass"/>
 	</Item>
 	<Item Name="Sub" Type="Folder">
-		<Item Name="Private" Type="Folder">
-			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-			<Item Name="Ctl" Type="Folder">
-				<Item Name="Ctl_Run Cluster.ctl" Type="VI" URL="../Sub/Private/Ctl/Ctl_Run Cluster.ctl"/>
-				<Item Name="Ctl_Build Steps.ctl" Type="VI" URL="../Sub/Private/Ctl/Ctl_Build Steps.ctl"/>
-			</Item>
-			<Item Name="Load and Validate.vi" Type="VI" URL="../Sub/Private/Load and Validate.vi"/>
-			<Item Name="Load and Validate_Extract Number.vi" Type="VI" URL="../Sub/Private/Load and Validate_Extract Number.vi"/>
-		</Item>
-		<Item Name="Set Error if Not Development System.vi" Type="VI" URL="../Sub/Set Error if Not Development System.vi"/>
 		<Item Name="Get Date Time String.vi" Type="VI" URL="../Sub/Get Date Time String.vi"/>
+		<Item Name="Extract Numbers from String.vi" Type="VI" URL="../Sub/Extract Numbers from String.vi"/>
 	</Item>
 	<Item Name="Class" Type="Folder">
 		<Item Name="Action" Type="Folder">
@@ -58,7 +48,13 @@
 		<Item Name="Report Action" Type="Folder">
 			<Item Name="Report Action.lvclass" Type="LVClass" URL="../Class/Report Action/Report Action/Report Action.lvclass"/>
 		</Item>
+		<Item Name="Project Builder.lvclass" Type="LVClass" URL="../Class/Project Builder/Project Builder.lvclass"/>
 	</Item>
-	<Item Name="Build Project.vi" Type="VI" URL="../Build Project.vi"/>
+	<Item Name="Ctl" Type="Folder">
+		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
+		<Item Name="Ctl_Build Steps.ctl" Type="VI" URL="../Ctl/Ctl_Build Steps.ctl"/>
+		<Item Name="Ctl_Action Result.ctl" Type="VI" URL="../Ctl/Ctl_Action Result.ctl"/>
+	</Item>
 	<Item Name="CLI Build from Project Path.vi" Type="VI" URL="../CLI Build from Project Path.vi"/>
+	<Item Name="Load and Build.vi" Type="VI" URL="../Load and Build.vi"/>
 </Library>
