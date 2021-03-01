@@ -487,9 +487,6 @@
 				<Item Name="Caraya_Run Tests in Active Project.vi" Type="VI" URL="../../../PPL/Caraya.lvlibp/1abvi3w/project/Caraya/Caraya_Run Tests in Active Project.vi"/>
 				<Item Name="Caraya_Get LV Class Default Value.vi" Type="VI" URL="../../../PPL/Caraya.lvlibp/1abvi3w/vi.lib/Utility/LVClass/Caraya_Get LV Class Default Value.vi"/>
 			</Item>
-			<Item Name="Populate.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Interface/Project Action Interface/Populate.vi"/>
-			<Item Name="Run Action.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Class/Action/Project Action/Run Action.vi"/>
-			<Item Name="Build Project.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Build Project.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Test_Exe" Type="EXE">
@@ -508,8 +505,8 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{683AEC4E-7B82-4B34-A0CD-5570217DBE78}</Property>
-				<Property Name="Bld_version.build" Type="UInt">1</Property>
 				<Property Name="Bld_version.major" Type="UInt">1</Property>
+				<Property Name="Bld_version.patch" Type="UInt">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Test_Exe.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../Test_Exe_Build/NI_AB_PROJECTNAME.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
