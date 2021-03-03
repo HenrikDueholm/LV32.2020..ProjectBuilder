@@ -106,6 +106,8 @@
 			<Item Name="HDH.ProjectBuilder_GetTargetBuildSpecs (project reference).vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/HDH.ProjectBuilder_GetTargetBuildSpecs (project reference).vi"/>
 			<Item Name="HDH.ProjectBuilder_GetTargetBuildSpecs.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/HDH.ProjectBuilder_GetTargetBuildSpecs.vi"/>
 			<Item Name="HDH.ProjectBuilder_1D String Array to Delimited String.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AdvancedString/HDH.ProjectBuilder_1D String Array to Delimited String.vi"/>
+			<Item Name="HDH.ProjectBuilder_Write Spreadsheet String.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/file.llb/HDH.ProjectBuilder_Write Spreadsheet String.vi"/>
+			<Item Name="HDH.ProjectBuilder_Write Delimited Spreadsheet (string).vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/file.llb/HDH.ProjectBuilder_Write Delimited Spreadsheet (string).vi"/>
 			<Item Name="HDH.ProjectBuilder_Error Cluster From Error Code.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_Error Cluster From Error Code.vi"/>
 			<Item Name="HDH.ProjectBuilder_LVNumericRepresentation.ctl" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/numeric/HDH.ProjectBuilder_LVNumericRepresentation.ctl"/>
 			<Item Name="HDH.ProjectBuilder_8.6CompatibleGlobalVar.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/config.llb/HDH.ProjectBuilder_8.6CompatibleGlobalVar.vi"/>
@@ -505,8 +507,9 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{683AEC4E-7B82-4B34-A0CD-5570217DBE78}</Property>
+				<Property Name="Bld_version.build" Type="UInt">1</Property>
 				<Property Name="Bld_version.major" Type="UInt">1</Property>
-				<Property Name="Bld_version.patch" Type="UInt">1</Property>
+				<Property Name="Bld_version.patch" Type="UInt">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">Test_Exe.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../Test_Exe_Build/NI_AB_PROJECTNAME.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>

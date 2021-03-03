@@ -1,33 +1,34 @@
 @ECHO OFF
-ECHO.
 SETLOCAL EnableDelayedExpansion
 
-::Load Builder Path
-ECHO Load paths:
-
-IF "%~1"=="" (
-	ECHO Builder Path not provided
-	EXIT /B 1
-)
-SET BuilderPath=%1
-SET BuilderPath=%BuilderPath:~1,-1%
-ECHO Builder Path = %BuilderPath%
-SHIFT
+::Set Constants
+SET LVVersion=2020
+SET LVFolder=%ProgramFiles(x86)%
+SET DefaultReportRoot=%ProgramData%\HDH\ProjectBuilder\Report
+SET ActivePath="%~dp0"
+SET ActiveFolder=%ActivePath:~1,-2%
 
 ::Initialize variables
+SET PPLPath=
 SET ArgQuit=FALSE
 SET ReportPath=
 SET BuilderName=
 SET BuilderData=
 SET LabVIEWPath=
 
-::Parse Arguments
+::Load Arguments
 :ArgumentLoop
 IF "%~1"=="" (
 	GOTO ArgumentLoopDone
 )
 SET Arg=%1
 SET ArgSubset=%Arg:~1,-1%
+
+::PPLPath should point to the folder containing the PPLs
+IF %ArgSubset:~0,7%==PPLPath (
+	SET PPLPath=%ArgSubset:~8%
+	GOTO MatchFound
+)
 
 IF %ArgSubset:~0,7%==Project (
 	SET ProjectPath=%ArgSubset:~8%
@@ -64,8 +65,47 @@ SHIFT
 IF NOT "%~1"=="" GOTO ArgumentLoop
 :ArgumentLoopDone
 
+ECHO Paths:
+
+::Validate Builder path
+IF "%PPLPath%"=="" (
+	IF EXIST %ActiveFolder%\HDH.ProjectBuilder.lvlibp (
+		SET BuilderPath=%ActiveFolder%\HDH.ProjectBuilder.lvlibp\CLI Build from Project Path.vi
+	) ELSE (
+		ECHO A Builder Path was not provided and file was not launched from folder containing HDH.ProjectBuilder.lvlibp
+		EXIT /B 1
+	)
+) 
+IF NOT "%PPLPath%"=="" (
+	IF EXIST %PPLPath%\HDH.ProjectBuilder.lvlibp (
+		SET BuilderPath=%PPLPath%\HDH.ProjectBuilder.lvlibp\CLI Build from Project Path.vi
+	) ELSE (
+		ECHO HDH.ProjectBuilder.lvlibp not found in the provided folder "%PPLPath%"
+		EXIT /B 1
+	)
+)
+ECHO Builder Path = %BuilderPath%
+
 ::Validate Project path
-IF NOT EXIST "%ProjectPath%" (
+SET ValidProject=FALSE
+
+CALL :NORMALIZEPATH "%ProjectPath%"
+SET RelProjectPath=%ABSRetVal%
+
+IF EXIST "%RelProjectPath%" (
+	SET ProjectPath=%RelProjectPath%
+	SET ValidProject=TRUE
+	GOTO ProjectPath_Found
+)
+
+IF EXIST "%ProjectPath%" (
+	SET ValidProject=TRUE
+	GOTO ProjectPath_Found
+)
+
+
+:ProjectPath_Found
+IF %ValidProject%==FALSE (
 	ECHO Project Path "%ProjectPath%" is not valid
 	EXIT /B 1
 )
@@ -76,7 +116,7 @@ FOR %%F IN (%ProjectPath%) DO SET ProjectName=%%~nF
 
 ::Validate OR Build report path
 IF "%ReportPath%"=="" (
-	SET ReportPath=%SystemDrive%\ProgramData\HDH\ProjectBuilder\Report\%ProjectName%
+	SET ReportPath=%DefaultReportRoot%\%ProjectName%
 )
 SET StatusPath=%ReportPath%\Status.txt
 SET SummaryPath=%ReportPath%\Summary.txt
@@ -84,7 +124,7 @@ ECHO Report Path = %ReportPath%
 
 ::Validate LabVIEW path
 IF "%LabVIEWPath%"=="" (
-	SET LabVIEWPath="%ProgramFiles(x86)%\National Instruments\LabVIEW 2020\LabVIEW.exe"
+	SET LabVIEWPath="%LVFolder%\National Instruments\LabVIEW %LVVersion%\LabVIEW.exe"
 )
 SET LabVIEWPath=%LabVIEWPath:~1,-1%
 IF NOT EXIST "%LabVIEWPath%" (
@@ -113,7 +153,8 @@ ECHO Run Project Builder:
 ECHO _____________________________________________________________________________________
 ECHO.
 
-%RunString%
+ECHO %RunString%
+pause
 
 ::Get results
 IF EXIST "%SummaryPath%" (
@@ -145,4 +186,10 @@ IF NOT %OperationResult%==Passed (
 ) ELSE (
 	ECHO Operation status: Passed
 )
-pause
+
+EXIT /B
+
+:: ==================== FUNCTIONS ====================
+:NORMALIZEPATH
+	SET ABSRetVal=%~f1
+	EXIT /B
