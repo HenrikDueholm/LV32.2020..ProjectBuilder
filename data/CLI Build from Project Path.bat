@@ -103,8 +103,8 @@ IF EXIST "%ProjectPath%" (
 	GOTO ProjectPath_Found
 )
 
-
 :ProjectPath_Found
+
 IF %ValidProject%==FALSE (
 	ECHO Project Path "%ProjectPath%" is not valid
 	EXIT /B 1
@@ -114,10 +114,39 @@ ECHO Project Path = %ProjectPath%
 ::Get Project file name
 FOR %%F IN (%ProjectPath%) DO SET ProjectName=%%~nF
 
-::Validate OR Build report path
+::Validate OR Build Report path
+SET ValidReport=FALSE
+
 IF "%ReportPath%"=="" (
 	SET ReportPath=%DefaultReportRoot%\%ProjectName%
+	SET ValidReport=TRUE
+	GOTO ReportPath_Found
 )
+
+CALL :NORMALIZEPATH "%ReportPath%"
+IF %ReportPath:~0,2%==.. (
+	SET ReportPath=%ABSRetVal%
+	SET ValidReport=TRUE
+	GOTO ReportPath_Found
+)
+
+IF %ReportPath:~0,2%==\\ (
+	SET ValidReport=TRUE
+	GOTO ReportPath_Found
+)
+
+IF %ReportPath:~1,2%==:\ (
+	SET ValidReport=TRUE
+	GOTO ReportPath_Found
+)
+
+:ReportPath_Found
+
+IF %ValidReport%==FALSE (
+	ECHO A report path was provided but could not be resolved into a valid path.
+	EXIT /B 1
+)
+
 SET StatusPath=%ReportPath%\Status.txt
 SET SummaryPath=%ReportPath%\Summary.txt
 ECHO Report Path = %ReportPath%
@@ -153,13 +182,14 @@ ECHO Run Project Builder:
 ECHO _____________________________________________________________________________________
 ECHO.
 
-ECHO %RunString%
-pause
+%RunString%
 
 ::Get results
 IF EXIST "%SummaryPath%" (
 	ECHO Operation summary:
-	FOR /F "usebackq tokens=1* delims=""" %%I IN ("%SummaryPath%") DO (echo %%I)
+	FOR /F "usebackq tokens=1* delims=""" %%I IN ("%SummaryPath%") DO (
+		ECHO %%I
+	)
 )
 
 ECHO.

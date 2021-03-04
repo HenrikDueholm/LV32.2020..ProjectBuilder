@@ -507,7 +507,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{683AEC4E-7B82-4B34-A0CD-5570217DBE78}</Property>
-				<Property Name="Bld_version.build" Type="UInt">1</Property>
+				<Property Name="Bld_version.build" Type="UInt">2</Property>
 				<Property Name="Bld_version.major" Type="UInt">1</Property>
 				<Property Name="Bld_version.patch" Type="UInt">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">Test_Exe.exe</Property>

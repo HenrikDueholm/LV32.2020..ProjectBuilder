@@ -15,6 +15,7 @@
 		<Item Name="data" Type="Folder">
 			<Item Name="CLI Build from Project Path.bat" Type="Document" URL="../data/CLI Build from Project Path.bat"/>
 			<Item Name="CLI Build from Project Path_Example.bat" Type="Document" URL="../data/CLI Build from Project Path_Example.bat"/>
+			<Item Name="CLI Build from Project Path_Relative Example.bat" Type="Document" URL="../data/CLI Build from Project Path_Relative Example.bat"/>
 		</Item>
 		<Item Name="Test" Type="Folder">
 			<Item Name="Local run of Caraya test.vi" Type="VI" URL="../Test/Local run of Caraya test.vi"/>
@@ -381,7 +382,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5230E900-2CCF-45A7-8442-DAA7B24C6E9E}</Property>
-				<Property Name="Bld_version.build" Type="Int">27</Property>
+				<Property Name="Bld_version.build" Type="Int">32</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">HDH.ProjectBuilder.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">../PPL/HDH.ProjectBuilder.lvlibp</Property>

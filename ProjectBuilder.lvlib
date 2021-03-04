@@ -14,7 +14,12 @@
 		<Item Name="Action Interface.lvclass" Type="LVClass" URL="../Interface/Action Interface/Action Interface.lvclass"/>
 	</Item>
 	<Item Name="Sub" Type="Folder">
+		<Item Name="Private" Type="Folder">
+			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			<Item Name="Create CLI Report.vi" Type="VI" URL="../Sub/Private/Create CLI Report.vi"/>
+		</Item>
 		<Item Name="Get Date Time String.vi" Type="VI" URL="../Sub/Get Date Time String.vi"/>
+		<Item Name="Get Time Stamp.vi" Type="VI" URL="../Sub/Get Time Stamp.vi"/>
 		<Item Name="Extract Numbers from String.vi" Type="VI" URL="../Sub/Extract Numbers from String.vi"/>
 	</Item>
 	<Item Name="Class" Type="Folder">
