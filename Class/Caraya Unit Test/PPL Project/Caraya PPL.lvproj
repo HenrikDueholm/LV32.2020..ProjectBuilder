@@ -432,7 +432,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">/C/Current projects/WS/PPL</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{4F01E147-CCF1-4F23-9E0E-BAD326F349EB}</Property>
-				<Property Name="Bld_version.build" Type="Int">7</Property>
+				<Property Name="Bld_version.build" Type="Int">8</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Caraya.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">/C/Current projects/WS/PPL/Caraya.lvlibp</Property>
@@ -445,7 +445,7 @@
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
 				<Property Name="Source[0].Container.applyPrefix" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{F417829D-EA95-4731-82A3-7E8D41605F25}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{F938BCFD-7E92-4A0F-99CB-E23496098C68}</Property>
 				<Property Name="Source[0].newName" Type="Str">Caraya_</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
@@ -463,10 +463,10 @@
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">Container</Property>
 				<Property Name="SourceCount" Type="Int">3</Property>
-				<Property Name="TgtF_companyName" Type="Str">Danfoss</Property>
+				<Property Name="TgtF_companyName" Type="Str">JKI</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Caraya</Property>
 				<Property Name="TgtF_internalName" Type="Str">Caraya</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2021 Danfoss</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright (c) 2015-2017, JKI </Property>
 				<Property Name="TgtF_productName" Type="Str">Caraya</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{D906053D-3785-46AA-BB88-30EC83EEAD81}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">Caraya.lvlibp</Property>

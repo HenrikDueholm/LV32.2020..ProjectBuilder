@@ -18,6 +18,11 @@
 			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			<Item Name="Create CLI Report.vi" Type="VI" URL="../Sub/Private/Create CLI Report.vi"/>
 		</Item>
+		<Item Name="Project" Type="Folder">
+			<Item Name="Project_Get Named Build Specification.vi" Type="VI" URL="../Sub/Project/Project_Get Named Build Specification.vi"/>
+			<Item Name="Project_Get Build Destination.vi" Type="VI" URL="../Sub/Project/Project_Get Build Destination.vi"/>
+			<Item Name="Build Specification_Get All Tags.vi" Type="VI" URL="../Sub/Project/Build Specification_Get All Tags.vi"/>
+		</Item>
 		<Item Name="Get Date Time String.vi" Type="VI" URL="../Sub/Get Date Time String.vi"/>
 		<Item Name="Get Time Stamp.vi" Type="VI" URL="../Sub/Get Time Stamp.vi"/>
 		<Item Name="Extract Numbers from String.vi" Type="VI" URL="../Sub/Extract Numbers from String.vi"/>
