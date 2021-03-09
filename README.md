@@ -5,7 +5,8 @@ Automate the test and build process. To get started read the Test section and ex
 # Implemented Functions
 Run Caraya unit test, 
 Change build spec version to version from project repository git tag, 
-Execute build specification
+Execute build specification,
+Copy build product to another folder
 
 # Dependencies
 PPL.ClassLoader - HenrikDueholm - https://github.com/HenrikDueholm/LV32.2020..PPL.ClassLoader

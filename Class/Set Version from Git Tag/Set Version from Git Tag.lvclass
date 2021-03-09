@@ -24,7 +24,7 @@
 
 </Property>
 	<Item Name="Parent Libraries" Type="Parent Libraries">
-		<Item Name="ProjectBuilder.lvlib:Project Action.lvclass" Type="Parent" URL="../../Action/Project Action/Project Action.lvclass"/>
+		<Item Name="ProjectBuilder.lvlib:Project Action.lvclass" Type="Parent" URL="../../Project Action/Project Action.lvclass"/>
 	</Item>
 	<Item Name="Set Version from Git Tag.ctl" Type="Class Private Data" URL="Set Version from Git Tag.ctl">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
@@ -53,13 +53,13 @@
 		</Item>
 	</Item>
 	<Item Name="Run Action_Do.vi" Type="VI" URL="../Run Action_Do.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!(6!!!!$!!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!$E!B#&amp;.V9W.F=X-`!!!%!!!!3E"Q!"Y!!#I55(*P;G6D&gt;%*V;7RE:8)O&lt;(:M;7)45G6Q&lt;X*U)%2B&gt;'%O&lt;(:D&lt;'&amp;T=Q!!&amp;&amp;*F='^S&gt;#"*&lt;H2F=G:B9W5A&lt;X6U!!!;1%!!!@````]!"AR3:8"P=H1A18*S98E!!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!4%"Q!"Y!!#Y55(*P;G6D&gt;%*V;7RE:8)O&lt;(:M;7)85(*P;G6D&gt;#"#&gt;7FM:'6S,GRW9WRB=X-!!"*1=G^K:7.U)%*V;7RE:8)A;7Y!!&amp;J!=!!?!!!X&amp;&amp;"S&lt;WJF9X2#&gt;7FM:'6S,GRW&lt;'FC)&amp;.F&gt;#"7:8*T;7^O)':S&lt;WUA2WFU)&amp;2B:SZM&gt;G.M98.T!"B4:81A6G6S=WFP&lt;C"G=G^N)%&gt;J&gt;#"597=!!&amp;1!]!!-!!-!"!!&amp;!!=!"1!&amp;!!5!"1!)!!5!#1!+!Q!!?!!!$1A!!!E!!!!!!!!!#1!!!!!!!!!!!!!!!!!!!!!!!!!+!!!!!!!!!"!!!!#1!!!!!!%!#Q!!!!!</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'N!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!$E!B#&amp;.V9W.F=X-`!!!%!!!!0%"Q!"Y!!#I55(*P;G6D&gt;%*V;7RE:8)O&lt;(:M;7)45G6Q&lt;X*U)%2B&gt;'%O&lt;(:D&lt;'&amp;T=Q!!"F*F='^S&gt;!!!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1"-1(!!(A!!,B21=G^K:7.U1H6J&lt;'2F=CZM&gt;GRJ9B&gt;1=G^K:7.U)%*V;7RE:8)O&lt;(:D&lt;'&amp;T=Q!!%F"S&lt;WJF9X1A1H6J&lt;'2F=C"J&lt;A!!7E"Q!"Y!!$=55(*P;G6D&gt;%*V;7RE:8)O&lt;(:M;7)A5W6U)&amp;:F=H.J&lt;WYA:H*P&lt;3"(;81A6'&amp;H,GRW9WRB=X-!'&amp;.F&gt;#"7:8*T;7^O)':S&lt;WUA2WFU)&amp;2B:Q!!6!$Q!!Q!!Q!%!!5!"A!&amp;!!5!"1!&amp;!!=!"1!)!!E$!!"Y!!!.#!!!#1!!!!!!!!!*!!!!!!!!!!!!!!!!!!!!!!!!!!I!!!!!!!!!%!!!!*!!!!!!!1!+!!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">1073741824</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1074274832</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342710288</Property>
 	</Item>
 	<Item Name="Write Build Specification Name.vi" Type="VI" URL="../Data Member Access/Write Build Specification Name.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'G!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!&amp;Z!=!!?!!!X&amp;&amp;"S&lt;WJF9X2#&gt;7FM:'6S,GRW&lt;'FC)&amp;.F&gt;#"7:8*T;7^O)':S&lt;WUA2WFU)&amp;2B:SZM&gt;G.M98.T!"R4:81A6G6S=WFP&lt;C"G=G^N)%&gt;J&gt;#"597=A&lt;X6U!!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!#*!-0````]91H6J&lt;'1A5X"F9WFG;7.B&gt;'FP&lt;C"/97VF!!"=1(!!(A!!.R21=G^K:7.U1H6J&lt;'2F=CZM&gt;GRJ9C"4:81A6G6S=WFP&lt;C"G=G^N)%&gt;J&gt;#"597=O&lt;(:D&lt;'&amp;T=Q!&lt;5W6U)&amp;:F=H.J&lt;WYA:H*P&lt;3"(;81A6'&amp;H)'FO!'%!]!!-!!-!"!!%!!5!"!!%!!1!"!!'!!1!"Q!)!A!!?!!!$1A!!!!!!!!!!!!!$1M!!!!!!!!!!!!!!!!!!!!!!!!)!!!!!!!!!B!!!!!3!!!.!!!!$!!!!!!!!!!!!!!"!!E!!!!!</Property>
