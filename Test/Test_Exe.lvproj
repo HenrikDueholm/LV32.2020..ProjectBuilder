@@ -26,6 +26,8 @@
 					</Item>
 					<Item Name="Project" Type="Folder">
 						<Item Name="Project_Get Named Build Specification.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Sub/Project/Project_Get Named Build Specification.vi"/>
+						<Item Name="Project_Get Build Destination.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Sub/Project/Project_Get Build Destination.vi"/>
+						<Item Name="Build Specification_Get All Tags.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Sub/Project/Build Specification_Get All Tags.vi"/>
 					</Item>
 					<Item Name="Get Date Time String.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Sub/Get Date Time String.vi"/>
 					<Item Name="Get Time Stamp.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Sub/Get Time Stamp.vi"/>
@@ -33,7 +35,7 @@
 				</Item>
 				<Item Name="Class" Type="Folder">
 					<Item Name="Action" Type="Folder">
-						<Item Name="Build Named Build Specification.lvclass" Type="Folder">
+						<Item Name="Build Named Build Specification" Type="Folder">
 							<Item Name="Data" Type="Folder">
 								<Item Name="Build Named Build Specification Data.lvclass" Type="LVClass" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Class/Build Named Build Specification/Build Named Build Specification Data/Build Named Build Specification Data.lvclass"/>
 							</Item>
@@ -48,13 +50,14 @@
 							</Item>
 							<Item Name="Set Version from Git Tag.lvclass" Type="LVClass" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Class/Set Version from Git Tag/Set Version from Git Tag.lvclass"/>
 						</Item>
-						<Item Name="Caraya Unit Test.lvclass" Type="Folder">
+						<Item Name="Caraya Unit Test" Type="Folder">
 							<Item Name="Data" Type="Folder">
 								<Item Name="Caraya Status Data.lvclass" Type="LVClass" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Class/Caraya Unit Test/Caraya Status Data/Caraya Status Data.lvclass"/>
 							</Item>
 							<Item Name="Caraya Unit Test.lvclass" Type="LVClass" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Class/Caraya Unit Test/Caraya Unit Test.lvclass"/>
 						</Item>
-						<Item Name="Project Action.lvclass" Type="LVClass" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Class/Action/Project Action/Project Action.lvclass"/>
+						<Item Name="Project Action.lvclass" Type="LVClass" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Class/Project Action/Project Action.lvclass"/>
+						<Item Name="Copy Build Product Action.lvclass" Type="LVClass" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Class/Copy Build Product Action/Copy Build Product Action.lvclass"/>
 					</Item>
 					<Item Name="Data" Type="Folder">
 						<Item Name="Report Data.lvclass" Type="LVClass" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Class/Data/Report Data/Report Data.lvclass"/>
@@ -66,7 +69,6 @@
 				</Item>
 				<Item Name="Ctl" Type="Folder">
 					<Item Name="Ctl_Build Steps.ctl" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Ctl/Ctl_Build Steps.ctl"/>
-					<Item Name="Ctl_Action Result.ctl" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Ctl/Ctl_Action Result.ctl"/>
 				</Item>
 				<Item Name="CLI Build from Project Path.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/CLI Build from Project Path.vi"/>
 				<Item Name="Load and Build.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Load and Build.vi"/>
@@ -114,14 +116,15 @@
 				<Item Name="HDH.ProjectBuilder_AB_Generate_Error_Cluster.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/HDH.ProjectBuilder_AB_Generate_Error_Cluster.vi"/>
 				<Item Name="HDH.ProjectBuilder_GetTargetBuildSpecs (project reference).vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/HDH.ProjectBuilder_GetTargetBuildSpecs (project reference).vi"/>
 				<Item Name="HDH.ProjectBuilder_GetTargetBuildSpecs.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/HDH.ProjectBuilder_GetTargetBuildSpecs.vi"/>
+				<Item Name="HDH.ProjectBuilder_Delimited String to 1D String Array.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AdvancedString/HDH.ProjectBuilder_Delimited String to 1D String Array.vi"/>
 				<Item Name="HDH.ProjectBuilder_1D String Array to Delimited String.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AdvancedString/HDH.ProjectBuilder_1D String Array to Delimited String.vi"/>
 				<Item Name="HDH.ProjectBuilder_Error Cluster From Error Code.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_Error Cluster From Error Code.vi"/>
 				<Item Name="HDH.ProjectBuilder_LVNumericRepresentation.ctl" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/numeric/HDH.ProjectBuilder_LVNumericRepresentation.ctl"/>
 				<Item Name="HDH.ProjectBuilder_8.6CompatibleGlobalVar.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/config.llb/HDH.ProjectBuilder_8.6CompatibleGlobalVar.vi"/>
 				<Item Name="HDH.ProjectBuilder_Check if File or Folder Exists.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/libraryn.llb/HDH.ProjectBuilder_Check if File or Folder Exists.vi"/>
+				<Item Name="HDH.ProjectBuilder_Get LV Class Path.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/LVClass/HDH.ProjectBuilder_Get LV Class Path.vi"/>
 				<Item Name="HDH.ProjectBuilder_Write Spreadsheet String.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/file.llb/HDH.ProjectBuilder_Write Spreadsheet String.vi"/>
 				<Item Name="HDH.ProjectBuilder_Write Delimited Spreadsheet (string).vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/file.llb/HDH.ProjectBuilder_Write Delimited Spreadsheet (string).vi"/>
-				<Item Name="HDH.ProjectBuilder_Get LV Class Path.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/LVClass/HDH.ProjectBuilder_Get LV Class Path.vi"/>
 				<Item Name="HDH.ProjectBuilder_Get Command Line Arguments.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/HDH.ProjectBuilder_Get Command Line Arguments.vi"/>
 			</Item>
 			<Item Name="HDH.ClassLoader.lvlibp" Type="LVLibp" URL="../../../PPL/HDH.ClassLoader.lvlibp">
@@ -513,8 +516,8 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{683AEC4E-7B82-4B34-A0CD-5570217DBE78}</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Bld_version.patch" Type="Int">3</Property>
+				<Property Name="Bld_version.major" Type="UInt">1</Property>
+				<Property Name="Bld_version.patch" Type="UInt">4</Property>
 				<Property Name="Destination[0].destName" Type="Str">Test_Exe.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../Test_Exe_Build/NI_AB_PROJECTNAME.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
@@ -561,7 +564,7 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{05560FE2-3526-424F-8362-7697D9FC8850}</Property>
 				<Property Name="Bld_version.major" Type="UInt">1</Property>
-				<Property Name="Bld_version.patch" Type="UInt">3</Property>
+				<Property Name="Bld_version.patch" Type="UInt">4</Property>
 				<Property Name="Destination[0].destName" Type="Str">Test_Exe.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../Test_Exe_Build/Caraya version test.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
