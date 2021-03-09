@@ -1,0 +1,4 @@
+Go to: https://github.com/JKISoftware/Caraya/issues/127#issuecomment-788510567
+and follow the link to: https://github.com/JKISoftware/Caraya/issues/56#issuecomment-788505300
+Download and install Caraya (jki_lib_caraya-1.2.0.122.vip)
+From LabVIEW follow instructions in https://github.com/JKISoftware/Caraya/issues/127#issuecomment-788510567 to build PPL

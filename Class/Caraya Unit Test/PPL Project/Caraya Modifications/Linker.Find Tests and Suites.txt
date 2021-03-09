@@ -1,6 +1,0 @@
-Path:
-C:\Program Files (x86)\National Instruments\LabVIEW 2020\vi.lib\addons\_JKI Toolkits\Caraya\classes\Test Runner\Linker.Find Tests and Suites.vi
-
-Modifications:
-Added check to see if the VI is built into a PPL or not. The results determintes the filter strings.
-The modified file can be found below in this folder. A 2013 edition can be found in the 2013 folder.
