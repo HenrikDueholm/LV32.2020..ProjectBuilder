@@ -2,6 +2,8 @@
 <LVClass LVVersion="20008000">
 	<Property Name="NI.Lib.ContainingLib" Type="Str">ProjectBuilder.lvlib</Property>
 	<Property Name="NI.Lib.ContainingLibPath" Type="Str">../../../ProjectBuilder.lvlib</Property>
+	<Property Name="NI.Lib.Description" Type="Str">Build a named build specification.</Property>
+	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*O!!!*Q(C=\&gt;7R&lt;&gt;N!&amp;-&lt;RDU'+N-Q%A4D#GS#!"EBA=)7XAFI[;?4/49I(:!+NI!63P"%C))"BFVK"_@.U)OB!A60%3!K40JL[S(@X]`&amp;%3W6\)\X7_.2WOF@TW;CR(-`R_7328&lt;Q_DK@;5D^?LF`OF_KHDZ@LO[YL\8T1Y_N&gt;084FL+P"I`J&amp;[6S^'+C7`K;_G]N_[?20J`&gt;F?^H_V49]O5C@@=UWJS`Y/#9N;%[T]OU;ETT*ETT*ETT*ATT)ATT)ATT)H&gt;T*H&gt;T*H&gt;T*D&gt;T)D&gt;T)D&gt;T/&lt;RVSE9N=6NY_S?$*1%GH31@*T6#5("*0YEE]C9?03DS**`%EHM4$,5I]C3@R**\%1ZE34_**0)EH]&gt;"6E74:S@%E(LJ8Y!E]A3@Q""['6/!*!-&amp;A1=&gt;"*T!58!R/!E`A#4S=+P!%HM!4?!)0FR6Y!E`A#4S"BZ)S+V%UUU[/BW\E?"S0YX%]DI?OZ8A=D_.R0)[(Y?2Y()_$=!:U/I=AJ]CZQ@HA?"Q0P_2Y()`D=4S/BUPF#8G:G5ET\?2Y$)`B-4S'R`$1B1S0Y4%]BM@QU+U-D_%R0)&lt;(]$#5$)`B-4Q'R"C5Y76U:B1;.RG"Y?'HL"9L4SG+R-IOV=7LOCB6&amp;ZPK)F*&gt;(+I08@6BKDYEV=F8H646S6+&gt;".5`4B7NCF%&gt;2,6YOF&amp;(DA@;HL;D&lt;7E&lt;7E^&lt;UV;U&gt;CL^ST=?DU=&gt;$A@N^XPN&gt;DNNNVNN.BPV@;`V?KX6;K7W&lt;?@8Q$PW_96Q?C].0TYWQWX&lt;$0&gt;8T@#F&lt;Y;\K_&lt;[_U0T[?V.=`XV7T.]O'E_XT[]@[&lt;`J@`"OV'PN/S8/@I*&gt;X^;\1!!!!!</Property>
 	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.2</Property>

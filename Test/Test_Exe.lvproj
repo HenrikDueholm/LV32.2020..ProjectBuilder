@@ -531,7 +531,7 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{683AEC4E-7B82-4B34-A0CD-5570217DBE78}</Property>
 				<Property Name="Bld_version.major" Type="UInt">1</Property>
-				<Property Name="Bld_version.patch" Type="UInt">6</Property>
+				<Property Name="Bld_version.patch" Type="UInt">7</Property>
 				<Property Name="Destination[0].destName" Type="Str">Test_Exe.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../Test_Exe_Build/NI_AB_PROJECTNAME.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
@@ -578,7 +578,7 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{05560FE2-3526-424F-8362-7697D9FC8850}</Property>
 				<Property Name="Bld_version.major" Type="UInt">1</Property>
-				<Property Name="Bld_version.patch" Type="UInt">6</Property>
+				<Property Name="Bld_version.patch" Type="UInt">7</Property>
 				<Property Name="Destination[0].destName" Type="Str">Test_Exe.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../Test_Exe_Build/Caraya version test.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>

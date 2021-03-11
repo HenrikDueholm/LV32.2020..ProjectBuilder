@@ -2,6 +2,9 @@
 <LVClass LVVersion="20008000">
 	<Property Name="NI.Lib.ContainingLib" Type="Str">ProjectBuilder.lvlib</Property>
 	<Property Name="NI.Lib.ContainingLibPath" Type="Str">../../../../ProjectBuilder.lvlib</Property>
+	<Property Name="NI.Lib.Description" Type="Str">Parent of the report action hierarchy.
+Report actions must be part of this hierarchy!</Property>
+	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*@!!!*Q(C=\&gt;9^&lt;BJ2&amp;)&lt;BT]B&amp;7J1.R'TB&gt;%E4*,9QJ9MU:QOUDIQ%7TB+FX,;F'TB&lt;)%NM!8STO5Q9G*(4B%L+4T$"?;\@Q]TFQ'J&lt;?_E7ZV?WI;7^@,-6P8N]5P.&gt;8V\/:U0BY0T9^J`OE`\N`LL`J=*4N@.HI%]L@_^PVQ8Y.1`THF&amp;@.J@9`_R`A^/\^PWNPX$\?(&amp;2@LK;`&lt;G=FN)3F#=9O&gt;P6*)H?:)H?:)H?:!(?:!(?:!(O:-\O:-\O:-\O:%&lt;O:%&lt;O:(&lt;Z@N-,H+2S^JX.ZE]G3A:."EA;1R&amp;S60C34S**`&amp;QK-34?"*0YEE].&amp;(C34S**`%E(LIJ]33?R*.Y%A^$.5GWH2R0YG&amp;Y":\!%XA#4_"B3A7?!""-&amp;AQ=$!*$178Q*P!%HM$$7Q7?Q".Y!E`AI6K"*`!%HM!4?/D3TEIUT&lt;#4YW%9/2\(YXA=D_.B;$E?R_.Y()`D94IZ(M@D)*Q*H=%BS/HE.(!/()`DY57/R`%Y(M@D?+BK6]D&lt;G2EUQU[/R`!9(M.D?!Q01]DQ'"\$9XA-$]0+]"A?QW.Y$!^4S@!9(M.D1)R*G6\'9%:(IZ%2'"Y?&lt;&lt;69OUL2*.:WV=^"7[CK";B;7+I&amp;IVI)KAOMOH#K#[)[U;I4K$IRKA_M_C!KI'JCV9#KBDLS@+$M+4VF2VF4/MK+MK$-B[Z`O?(R?.4B=."_PV@@^^LN&gt;FKPV_K[4KP63IP&amp;1P0Z@,Q.@'!@&lt;QDH_^+7^ZM(,&lt;@P0XX:^0VS]_0DX?0M]]XDD0T&lt;`&gt;@N^W[ZC@PF+`W7`A@X2MUG`\]Y2T]"VSJ`,A!!!!!</Property>
 	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.1</Property>
@@ -28,9 +31,6 @@
 	</Item>
 	<Item Name="Report Action.ctl" Type="Class Private Data" URL="Report Action.ctl">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-	</Item>
-	<Item Name="Protected" Type="Folder">
-		<Property Name="NI.LibItem.Scope" Type="Int">3</Property>
 	</Item>
 	<Item Name="Report_Do.vi" Type="VI" URL="../Report_Do.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;2!!!!#1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!#"!5!!$!!!!!1!#%W6S=G^S)'FO)#BO&lt;S"F=H*P=CE!4%"Q!"Y!!#Y55(*P;G6D&gt;%*V;7RE:8)O&lt;(:M;7)85(*P;G6D&gt;#"#&gt;7FM:'6S,GRW9WRB=X-!!"*1=G^K:7.U)%*V;7RE:8)A;7Y!!%B!=!!?!!!M&amp;&amp;"S&lt;WJF9X2#&gt;7FM:'6S,GRW&lt;'FC&amp;6*F='^S&gt;#""9X2J&lt;WYO&lt;(:D&lt;'&amp;T=Q!!%&amp;*F='^S&gt;#""9X2J&lt;WYA;7Y!!&amp;1!]!!-!!-!"!!%!!1!"!!%!!1!"!!&amp;!!1!"A!(!A!!?!!!$1A!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!)!!!!!!!!!"!!!!#1!!!!!!%!#!!!!!!</Property>

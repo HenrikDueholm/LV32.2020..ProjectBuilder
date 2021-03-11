@@ -2,6 +2,8 @@
 <LVClass LVVersion="20008000">
 	<Property Name="NI.Lib.ContainingLib" Type="Str">ProjectBuilder.lvlib</Property>
 	<Property Name="NI.Lib.ContainingLibPath" Type="Str">../../../ProjectBuilder.lvlib</Property>
+	<Property Name="NI.Lib.Description" Type="Str">Run a Caraya test on a project (https://github.com/JKISoftware/Caraya)</Property>
+	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*G!!!*Q(C=\&gt;;R&lt;&gt;N!&amp;-&lt;R4U%+N^L!)*!M])*-I#)$7!-9#&amp;Y2J%CHFJ6"D`$+!+GUANK5&lt;Q7NI"790Y^0CC$952-D+5T[*/K\Y^V0RS.FK7UXUFO.V\;JZ@T[V.:KRP&lt;XR`LZ=0IUP7E]^PH\`'.=P9U['XFO.5&gt;DD89J']]/,];`4*_P(U`-*_N0RO@KR`-P8+LLU`O[P7\`=/OP,N)88\/,_@Y&gt;R[1%R3EWX_N*HO2*HO2*HO2"(O2"(O2"(O2/\O2/\O2/\O2'&lt;O2'&lt;O2'&lt;M&gt;\GFTE)J?V_T=:0"EI[44J)'E-2=F,YEE]C3@R]&amp;'**`%EHM34?'CCR*.Y%E`C34S=JM34?"*0YEE]&gt;.5EW8:S0)G(\B6Y!E`A#4S"BS%6?!*!-&amp;D1=&gt;!*$!76Q5(A#4S"BU-&amp;HM!4?!*0Y+&amp;;A3@Q"*\!%XAYJ=V+.-WUE_/B'TE?R_.Y()`DI7MZ(M@D?"S0YW%Y/2\(YS#=!:X/)=AZS7HA@(!]DI=X/2\(YXA=D_/BKFUB&lt;T-T;;;&gt;()`B-4S'R`!9(LK1Y4%]BM@Q'"[[F?%R0)&lt;(]"A?BJ,B-4S'RY!9AT+]D-[-%YV'2G"Y_'OLR&gt;J6CC;RNKN_K.J#63V!V=*3,2D61F"&gt;9.7&amp;5VU1V53L*F!V-;IPL0IC+K"K9&amp;7(KI9[],KH\#B&lt;SE$:5.;5&amp;;7D,+&gt;4`X,$Q_'A`8[PX7[H\8;L92CUW7SU8K_V7KX5&gt;:W7S_8J-8$,@HIAT-_F"YY@+=0(,`?0&gt;T__0XTY@.^`OVHUNZ4O[[*`^WH2P`_Z?+(@UP`AW;AXZ``&lt;4(0U#T.,:BE!!!!!</Property>
 	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.7</Property>
