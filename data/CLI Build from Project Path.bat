@@ -1,6 +1,7 @@
 @ECHO OFF
 SETLOCAL EnableDelayedExpansion
 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ::Set Constants
 SET LVVersion=2020
 SET LVFolder=%ProgramFiles(x86)%
@@ -8,14 +9,17 @@ SET DefaultReportRoot=%ProgramData%\HDH\ProjectBuilder\Report
 SET ActivePath="%~dp0"
 SET ActiveFolder=%ActivePath:~1,-2%
 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ::Initialize variables
 SET PPLPath=
 SET ArgQuit=FALSE
 SET ReportPath=
+SET ConfigPath=
 SET BuilderName=
 SET BuilderData=
 SET LabVIEWPath=
 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ::Load Arguments
 :ArgumentLoop
 IF "%~1"=="" (
@@ -37,6 +41,11 @@ IF %ArgSubset:~0,7%==Project (
 
 IF %ArgSubset:~0,6%==Report (
 	SET ReportPath=%ArgSubset:~7%
+	GOTO MatchFound
+)
+
+IF %ArgSubset:~0,6%==Config (
+	SET ConfigPath=%ArgSubset:~7%
 	GOTO MatchFound
 )
 
@@ -65,9 +74,12 @@ SHIFT
 IF NOT "%~1"=="" GOTO ArgumentLoop
 :ArgumentLoopDone
 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::Validate paths
+
 ECHO Paths:
 
-::Validate Builder path
+::Builder path
 IF "%PPLPath%"=="" (
 	IF EXIST %ActiveFolder%\HDH.ProjectBuilder.lvlibp (
 		SET BuilderPath=%ActiveFolder%\HDH.ProjectBuilder.lvlibp\CLI Build from Project Path.vi
@@ -86,7 +98,7 @@ IF NOT "%PPLPath%"=="" (
 )
 ECHO Builder Path = %BuilderPath%
 
-::Validate Project path
+::Project path
 SET ValidProject=FALSE
 
 CALL :NORMALIZEPATH "%ProjectPath%"
@@ -114,7 +126,7 @@ ECHO Project Path = %ProjectPath%
 ::Get Project file name
 FOR %%F IN (%ProjectPath%) DO SET ProjectName=%%~nF
 
-::Validate OR Build Report path
+::Report path
 SET ValidReport=FALSE
 
 IF "%ReportPath%"=="" (
@@ -151,7 +163,40 @@ SET StatusPath=%ReportPath%\Status.txt
 SET SummaryPath=%ReportPath%\Summary.txt
 ECHO Report Path = %ReportPath%
 
-::Validate LabVIEW path
+::Config path
+SET ValidConfig=FALSE
+
+IF "%ConfigPath%"=="" (
+	SET ValidConfig=TRUE
+	GOTO ConfigPath_Found
+)
+
+CALL :NORMALIZEPATH "%ConfigPath%"
+SET RelConfigPath=%ABSRetVal%
+
+IF EXIST "%RelConfigPath%" (
+	SET ConfigPath=%RelConfigPath%
+	SET ValidConfig=TRUE
+	GOTO ConfigPath_Found
+)
+
+IF EXIST "%ConfigPath%" (
+	SET ValidProject=TRUE
+	GOTO ConfigPath_Found
+)
+
+:ConfigPath_Found
+
+IF %ValidConfig%==FALSE (
+	ECHO An invalid config override path was provided "%ConfigPath%"
+	EXIT /B 1
+)
+
+IF NOT "%ConfigPath%"=="" (
+	ECHO Config Override Path = %ConfigPath%
+)
+
+::LabVIEW path
 IF "%LabVIEWPath%"=="" (
 	SET LabVIEWPath="%LVFolder%\National Instruments\LabVIEW %LVVersion%\LabVIEW.exe"
 )
@@ -163,6 +208,7 @@ IF NOT EXIST "%LabVIEWPath%" (
 ECHO LabVIEW Path = %LabVIEWPath%
 ECHO.
 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ::Build run string
 SET RunString="%LabVIEWPath%" "%BuilderPath%" -- "Project=%ProjectPath%" "Report=%ReportPath%"
 
@@ -177,6 +223,13 @@ IF NOT "%BuilderName%"=="" (
 IF NOT "%BuilderData%"=="" (
 	SET RunString=%RunString% "BuilderData=%BuilderData%"
 )
+
+IF NOT "%ConfigPath%"=="" (
+	SET RunString=%RunString% "Config=%ConfigPath%"
+)
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+::Execute RunString
 
 ECHO Run Project Builder:
 ECHO _____________________________________________________________________________________
@@ -197,6 +250,7 @@ ECHO ___________________________________________________________________________
 ECHO Operation Complete
 ECHO.
 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ECHO Evalute Results:
 
 ::Check for status
