@@ -15,7 +15,7 @@ ECHO Entering "CLI Build from Project Path.bat" with arguments for a test projec
 ECHO _____________________________________________________________________________________
 ECHO _____________________________________________________________________________________
 ECHO.
-CALL "CLI Build from Project Path.bat" "Project=C:\Current projects\WS\LV32.2020..ProjectBuilder\Test\Test_Exe.lvproj" "quit" "Report=C:\Current projects\WS\_Report\TestData"
+CALL "CLI Build from Project Path.bat" "Project=C:\Current projects\WS\LV32.2020..ProjectBuilder\Test\Test_Exe.lvproj" "Report=C:\Current projects\WS\_Report\TestData"
 ECHO.
 ECHO _____________________________________________________________________________________
 ECHO _____________________________________________________________________________________

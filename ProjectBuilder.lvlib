@@ -44,11 +44,11 @@
 				</Item>
 				<Item Name="Set Version from Git Tag.lvclass" Type="LVClass" URL="../Class/Set Version from Git Tag/Set Version from Git Tag.lvclass"/>
 			</Item>
-			<Item Name="Caraya Unit Test" Type="Folder">
+			<Item Name="Caraya Test" Type="Folder">
 				<Item Name="Data" Type="Folder">
-					<Item Name="Caraya Status Data.lvclass" Type="LVClass" URL="../Class/Caraya Unit Test/Caraya Status Data/Caraya Status Data.lvclass"/>
+					<Item Name="Caraya Status Data.lvclass" Type="LVClass" URL="../Class/Caraya Test/Caraya Status Data/Caraya Status Data.lvclass"/>
 				</Item>
-				<Item Name="Caraya Unit Test.lvclass" Type="LVClass" URL="../Class/Caraya Unit Test/Caraya Unit Test.lvclass"/>
+				<Item Name="Caraya Test.lvclass" Type="LVClass" URL="../Class/Caraya Test/Caraya Test.lvclass"/>
 			</Item>
 			<Item Name="Project Action.lvclass" Type="LVClass" URL="../Class/Project Action/Project Action.lvclass"/>
 			<Item Name="Copy Build Product Action.lvclass" Type="LVClass" URL="../Class/Copy Build Product Action/Copy Build Product Action.lvclass"/>

@@ -12,7 +12,7 @@ SET ActiveFolder=%ActivePath:~1,-2%
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 ::Initialize variables
 SET PPLPath=
-SET ArgQuit=FALSE
+SET ArgQuit=TRUE
 SET ReportPath=
 SET ConfigPath=
 SET BuilderName=
@@ -49,8 +49,8 @@ IF %ArgSubset:~0,6%==Config (
 	GOTO MatchFound
 )
 
-IF %ArgSubset:~0,4%==quit (
-	SET ArgQuit=TRUE
+IF %ArgSubset:~0,8%==DontQuit (
+	SET ArgQuit=FALSE
 	GOTO MatchFound
 )
 
@@ -212,8 +212,8 @@ ECHO.
 ::Build run string
 SET RunString="%LabVIEWPath%" "%BuilderPath%" -- "Project=%ProjectPath%" "Report=%ReportPath%"
 
-IF "%ArgQuit%"=="TRUE" (
-	SET RunString=%RunString% "quit"
+IF "%ArgQuit%"=="FALSE" (
+	SET RunString=%RunString% "DontQuit"
 )
 
 IF NOT "%BuilderName%"=="" (
