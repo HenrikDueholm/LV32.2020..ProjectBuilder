@@ -12,6 +12,7 @@ To get started read the Test section and examine the example bat files in "\data
 - Change build spec version to version from project repository git tag
 - Execute build specification
 - Copy build product to another folder
+- Run System Exec
 ```
 
 ## Installation
@@ -146,6 +147,22 @@ Target - Optional: The name of the target. Defaults to "My Computer" if empty.
 Copy Target - Optional: Absolute Path or Relative Path to the report folder where the build will be copied to.
 
 File Name Exclusions - Optional: Array of file names that should be skipped when copying. Separate names with colon (:).
+
+### Run System Exec
+Executes System Exec.vi with the provided input.
+
+#### Settings
+Command Line - Required: String input for the Command Line node. May not be empty.
+
+Standard Input - Optional: String input for the standard input node.
+
+Working Directory - Optional: Absolute Path or Relative path to the project folder. The project folder is used if no directory is provided.
+
+Expected Output Size - Optional: numeric input for expected output size node. If not specified the default value of 4096 is used.
+
+Skip Prefix CMD - Optional: If not "True" "cmd /c " is appended in front of the "Command Line"-string.
+
+Alias - Optional: Alias for the action step. Will be visible in the summary if not empty.
 
 ## Project Builder details
 This section will describe the Project Builder and how it can be acted upon. The core of the class is the static "Build.vi" which handles the execution of the project actions.

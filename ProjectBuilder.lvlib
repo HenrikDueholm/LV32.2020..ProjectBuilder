@@ -24,6 +24,7 @@
 			<Item Name="Build Specification_Get All Tags.vi" Type="VI" URL="../Sub/Project/Build Specification_Get All Tags.vi"/>
 		</Item>
 		<Item Name="Get Date Time String.vi" Type="VI" URL="../Sub/Get Date Time String.vi"/>
+		<Item Name="Convert String to Boolean.vi" Type="VI" URL="../Sub/Convert String to Boolean.vi"/>
 		<Item Name="Get Time Stamp.vi" Type="VI" URL="../Sub/Get Time Stamp.vi"/>
 		<Item Name="Extract Numbers from String.vi" Type="VI" URL="../Sub/Extract Numbers from String.vi"/>
 	</Item>
@@ -49,6 +50,12 @@
 					<Item Name="Caraya Status Data.lvclass" Type="LVClass" URL="../Class/Caraya Test/Caraya Status Data/Caraya Status Data.lvclass"/>
 				</Item>
 				<Item Name="Caraya Test.lvclass" Type="LVClass" URL="../Class/Caraya Test/Caraya Test.lvclass"/>
+			</Item>
+			<Item Name="Run System Exec" Type="Folder">
+				<Item Name="Data" Type="Folder">
+					<Item Name="System Exec Data.lvclass" Type="LVClass" URL="../Class/Run System Exec/System Exec Data/System Exec Data.lvclass"/>
+				</Item>
+				<Item Name="Run System Exec.lvclass" Type="LVClass" URL="../Class/Run System Exec/Run System Exec.lvclass"/>
 			</Item>
 			<Item Name="Project Action.lvclass" Type="LVClass" URL="../Class/Project Action/Project Action.lvclass"/>
 			<Item Name="Copy Build Product Action.lvclass" Type="LVClass" URL="../Class/Copy Build Product Action/Copy Build Product Action.lvclass"/>
