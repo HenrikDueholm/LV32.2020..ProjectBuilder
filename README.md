@@ -11,6 +11,7 @@ To get started read the Test section and examine the example bat files in "\data
 - Run Caraya test
 - Change build spec version to version from project repository git tag
 - Execute build specification
+- PPL Class Test
 - Copy build product to another folder
 - Run System Exec
 ```
@@ -133,6 +134,21 @@ Meant to be used as a "Build" or a "Deploy"-action.
 Name - Required: The name of the build specification to build.
 
 Target - Optional: The name of the target. Defaults to "My Computer" if empty.
+
+### PPL Class Test
+Performs either a targeted PPL class test or a full test on all PPLs in the PPL folder.
+
+Use this action as a post build verification. If it is used as a pre-build action the build will fail as the PPL will be in memory before the build is executed!
+
+#### Settings
+Test Environment - Optional: The type of enironment to use when running the test. Will default to dev (development environment) if empty. Currently only supports dev.
+
+PPL Name - Optional: If set only the target PPL will be tested, else all PPLs in the PPL folder will be tested. Note that the name must include the extension if used.
+
+Show Load UI - Optional: A class load UI will be shown while loading classes if set to True. Default is False.
+
+Plugins - Optional: Array of basic class names for classes that have "PPL Class Test Plugin.lvclass" as a parent interface. 
+These classes will be loaded and their tests run on every loaded class. 
 
 ### Copy Build Product Action
 Copies the build product from a previous "Build Named Build Specification"-action to a desired location.

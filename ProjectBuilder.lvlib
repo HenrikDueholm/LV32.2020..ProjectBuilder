@@ -57,6 +57,18 @@
 				</Item>
 				<Item Name="Run System Exec.lvclass" Type="LVClass" URL="../Class/Run System Exec/Run System Exec.lvclass"/>
 			</Item>
+			<Item Name="PPL Class Test" Type="Folder">
+				<Item Name="Sub" Type="Folder">
+					<Item Name="Run PPL Class Load Test.vi" Type="VI" URL="../Class/PPL Class Test/Sub/Run PPL Class Load Test.vi"/>
+				</Item>
+				<Item Name="Data" Type="Folder">
+					<Item Name="PPL Class Test Data.lvclass" Type="LVClass" URL="../Class/PPL Class Test/PPL Class Test Data/PPL Class Test Data.lvclass"/>
+				</Item>
+				<Item Name="Plugin" Type="Folder">
+					<Item Name="PPL Class Test Plugin.lvclass" Type="LVClass" URL="../Class/PPL Class Test/PPL Class Test Plugin/PPL Class Test Plugin.lvclass"/>
+				</Item>
+				<Item Name="PPL Class Test.lvclass" Type="LVClass" URL="../Class/PPL Class Test/PPL Class Test.lvclass"/>
+			</Item>
 			<Item Name="Project Action.lvclass" Type="LVClass" URL="../Class/Project Action/Project Action.lvclass"/>
 			<Item Name="Copy Build Product Action.lvclass" Type="LVClass" URL="../Class/Copy Build Product Action/Copy Build Product Action.lvclass"/>
 		</Item>
