@@ -38,7 +38,7 @@ The build product is also required for running the tests from the Test-section.
 ## Test
 The source files contain a demonstration of the ProjectBuilder.
 
-Run "CLI Build from Project Path_Relative Example.bat" from the PPL folder.
+Run "CLI Build from Project Path_Executable Example.bat" from the PPL folder.
 
 This will execute the following call:
 
@@ -141,7 +141,7 @@ Performs either a targeted PPL class test or a full test on all PPLs in the PPL 
 Use this action as a post build verification. If it is used as a pre-build action the build will fail as the PPL will be in memory before the build is executed!
 
 #### Settings
-Test Environment - Optional: The type of enironment to use when running the test. Will default to dev (development environment) if empty. Currently only supports dev.
+Test Environment - Optional: The type of enironment to use when running the test. Will default to dev (development environment) if empty. Use RTE for Run-Time engine.
 
 PPL Name - Optional: If set only the target PPL will be tested, else all PPLs in the PPL folder will be tested. Note that the name must include the extension if used.
 

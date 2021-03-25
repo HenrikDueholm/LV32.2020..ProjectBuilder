@@ -30,8 +30,10 @@
 						<Item Name="Build Specification_Get All Tags.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Sub/Project/Build Specification_Get All Tags.vi"/>
 					</Item>
 					<Item Name="Get Date Time String.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Sub/Get Date Time String.vi"/>
+					<Item Name="Convert String to Boolean.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Sub/Convert String to Boolean.vi"/>
 					<Item Name="Get Time Stamp.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Sub/Get Time Stamp.vi"/>
 					<Item Name="Extract Numbers from String.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Sub/Extract Numbers from String.vi"/>
+					<Item Name="Path_HDH ProjectBuilder Folder.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Sub/Path_HDH ProjectBuilder Folder.vi"/>
 				</Item>
 				<Item Name="Class" Type="Folder">
 					<Item Name="Action" Type="Folder">
@@ -56,6 +58,24 @@
 							</Item>
 							<Item Name="Caraya Test.lvclass" Type="LVClass" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Class/Caraya Test/Caraya Test.lvclass"/>
 						</Item>
+						<Item Name="Run System Exec" Type="Folder">
+							<Item Name="Data" Type="Folder">
+								<Item Name="System Exec Data.lvclass" Type="LVClass" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Class/Run System Exec/System Exec Data/System Exec Data.lvclass"/>
+							</Item>
+							<Item Name="Run System Exec.lvclass" Type="LVClass" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Class/Run System Exec/Run System Exec.lvclass"/>
+						</Item>
+						<Item Name="PPL Class Test" Type="Folder">
+							<Item Name="Sub" Type="Folder">
+								<Item Name="Run PPL Class Load Test.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Class/PPL Class Test/Sub/Run PPL Class Load Test.vi"/>
+							</Item>
+							<Item Name="Data" Type="Folder">
+								<Item Name="PPL Class Test Data.lvclass" Type="LVClass" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Class/PPL Class Test/PPL Class Test Data/PPL Class Test Data.lvclass"/>
+							</Item>
+							<Item Name="Plugin" Type="Folder">
+								<Item Name="PPL Class Test Plugin.lvclass" Type="LVClass" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Class/PPL Class Test/PPL Class Test Plugin/PPL Class Test Plugin.lvclass"/>
+							</Item>
+							<Item Name="PPL Class Test.lvclass" Type="LVClass" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Class/PPL Class Test/PPL Class Test.lvclass"/>
+						</Item>
 						<Item Name="Project Action.lvclass" Type="LVClass" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Class/Project Action/Project Action.lvclass"/>
 						<Item Name="Copy Build Product Action.lvclass" Type="LVClass" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/Class/Copy Build Product Action/Copy Build Product Action.lvclass"/>
 					</Item>
@@ -77,11 +97,22 @@
 				<Item Name="HDH.ProjectBuilder_NI_FileType.lvlib" Type="Library" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/lvfile.llb/HDH.ProjectBuilder_NI_FileType.lvlib"/>
 				<Item Name="HDH.ProjectBuilder_NI_PackedLibraryUtility.lvlib" Type="Library" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/LVLibp/HDH.ProjectBuilder_NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="HDH.ProjectBuilder_NI_App_Builder_API.lvlib" Type="Library" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/AB_API_Simple/HDH.ProjectBuilder_NI_App_Builder_API.lvlib"/>
-				<Item Name="HDH.ProjectBuilder_Space Constant.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/dlg_ctls.llb/HDH.ProjectBuilder_Space Constant.vi"/>
 				<Item Name="HDH.ProjectBuilder_Create Directory Recursive.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/libraryn.llb/HDH.ProjectBuilder_Create Directory Recursive.vi"/>
-				<Item Name="HDH.ProjectBuilder_Get File Extension.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/libraryn.llb/HDH.ProjectBuilder_Get File Extension.vi"/>
-				<Item Name="HDH.ProjectBuilder_Clear Errors.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_Clear Errors.vi"/>
+				<Item Name="HDH.ProjectBuilder_Open File+.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/file.llb/HDH.ProjectBuilder_Open File+.vi"/>
+				<Item Name="HDH.ProjectBuilder_compatReadText.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/_oldvers/_oldvers.llb/HDH.ProjectBuilder_compatReadText.vi"/>
+				<Item Name="HDH.ProjectBuilder_Read File+ (string).vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/file.llb/HDH.ProjectBuilder_Read File+ (string).vi"/>
+				<Item Name="HDH.ProjectBuilder_Find First Error.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_Find First Error.vi"/>
+				<Item Name="HDH.ProjectBuilder_Close File+.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/file.llb/HDH.ProjectBuilder_Close File+.vi"/>
+				<Item Name="HDH.ProjectBuilder_Read Lines From File (with error IO).vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/file.llb/HDH.ProjectBuilder_Read Lines From File (with error IO).vi"/>
+				<Item Name="HDH.ProjectBuilder_Read Delimited Spreadsheet (string).vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/file.llb/HDH.ProjectBuilder_Read Delimited Spreadsheet (string).vi"/>
 				<Item Name="HDH.ProjectBuilder_System Exec.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Platform/system.llb/HDH.ProjectBuilder_System Exec.vi"/>
+				<Item Name="HDH.ProjectBuilder_1D String Array to Delimited String.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AdvancedString/HDH.ProjectBuilder_1D String Array to Delimited String.vi"/>
+				<Item Name="HDH.ProjectBuilder_Clear Errors.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_Clear Errors.vi"/>
+				<Item Name="HDH.ProjectBuilder_Error Cluster From Error Code.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_Error Cluster From Error Code.vi"/>
+				<Item Name="HDH.ProjectBuilder_Delimited String to 1D String Array.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AdvancedString/HDH.ProjectBuilder_Delimited String to 1D String Array.vi"/>
+				<Item Name="HDH.ProjectBuilder_Get LV Class Default Value.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/LVClass/HDH.ProjectBuilder_Get LV Class Default Value.vi"/>
+				<Item Name="HDH.ProjectBuilder_Get File Extension.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/libraryn.llb/HDH.ProjectBuilder_Get File Extension.vi"/>
+				<Item Name="HDH.ProjectBuilder_Space Constant.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/dlg_ctls.llb/HDH.ProjectBuilder_Space Constant.vi"/>
 				<Item Name="HDH.ProjectBuilder_Invoke BuildTarget.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/HDH.ProjectBuilder_Invoke BuildTarget.vi"/>
 				<Item Name="HDH.ProjectBuilder_provcom_StringGlobals.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/resource/Framework/Providers/Common/HDH.ProjectBuilder_provcom_StringGlobals.vi"/>
 				<Item Name="HDH.ProjectBuilder_DialogType.ctl" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_DialogType.ctl"/>
@@ -116,9 +147,8 @@
 				<Item Name="HDH.ProjectBuilder_AB_Generate_Error_Cluster.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/HDH.ProjectBuilder_AB_Generate_Error_Cluster.vi"/>
 				<Item Name="HDH.ProjectBuilder_GetTargetBuildSpecs (project reference).vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/HDH.ProjectBuilder_GetTargetBuildSpecs (project reference).vi"/>
 				<Item Name="HDH.ProjectBuilder_GetTargetBuildSpecs.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AppBuilder/HDH.ProjectBuilder_GetTargetBuildSpecs.vi"/>
-				<Item Name="HDH.ProjectBuilder_Delimited String to 1D String Array.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AdvancedString/HDH.ProjectBuilder_Delimited String to 1D String Array.vi"/>
-				<Item Name="HDH.ProjectBuilder_1D String Array to Delimited String.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/AdvancedString/HDH.ProjectBuilder_1D String Array to Delimited String.vi"/>
-				<Item Name="HDH.ProjectBuilder_Error Cluster From Error Code.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/error.llb/HDH.ProjectBuilder_Error Cluster From Error Code.vi"/>
+				<Item Name="HDH.ProjectBuilder_System Directory Type.ctl" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/sysdir.llb/HDH.ProjectBuilder_System Directory Type.ctl"/>
+				<Item Name="HDH.ProjectBuilder_Get System Directory.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/sysdir.llb/HDH.ProjectBuilder_Get System Directory.vi"/>
 				<Item Name="HDH.ProjectBuilder_LVNumericRepresentation.ctl" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/numeric/HDH.ProjectBuilder_LVNumericRepresentation.ctl"/>
 				<Item Name="HDH.ProjectBuilder_8.6CompatibleGlobalVar.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/config.llb/HDH.ProjectBuilder_8.6CompatibleGlobalVar.vi"/>
 				<Item Name="HDH.ProjectBuilder_Check if File or Folder Exists.vi" Type="VI" URL="../../../PPL/HDH.ProjectBuilder.lvlibp/1abvi3w/vi.lib/Utility/libraryn.llb/HDH.ProjectBuilder_Check if File or Folder Exists.vi"/>
@@ -422,6 +452,7 @@
 			</Item>
 		</Item>
 		<Item Name="Test_Exe_Main.vi" Type="VI" URL="../Test_Exe_Main.vi"/>
+		<Item Name="Test_PPL library.lvlib" Type="Library" URL="../Test_PPL library.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
@@ -526,31 +557,27 @@
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../Test_Exe_Build</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/Current projects/WS/ProjectBuilder_Test/NI_AB_PROJECTNAME</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{683AEC4E-7B82-4B34-A0CD-5570217DBE78}</Property>
 				<Property Name="Bld_version.major" Type="UInt">1</Property>
-				<Property Name="Bld_version.patch" Type="UInt">8</Property>
+				<Property Name="Bld_version.patch" Type="UInt">11</Property>
 				<Property Name="Destination[0].destName" Type="Str">Test_Exe.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../Test_Exe_Build/NI_AB_PROJECTNAME.exe</Property>
-				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/Current projects/WS/ProjectBuilder_Test/NI_AB_PROJECTNAME/Test_Exe.exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../Test_Exe_Build/data</Property>
-				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="Destination[1].path" Type="Path">/C/Current projects/WS/ProjectBuilder_Test/NI_AB_PROJECTNAME/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{C3662A71-4CF9-4FA1-B014-18003E0F00CF}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{2950BE4A-74EC-4E09-9ADA-6712C9A1B23D}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref"></Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Test_Exe_Main.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Test_Exe_Main.vi</Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[2].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
 				<Property Name="TgtF_companyName" Type="Str">Danfoss</Property>
 				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Test_Exe</Property>
@@ -578,7 +605,7 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{05560FE2-3526-424F-8362-7697D9FC8850}</Property>
 				<Property Name="Bld_version.major" Type="UInt">1</Property>
-				<Property Name="Bld_version.patch" Type="UInt">8</Property>
+				<Property Name="Bld_version.patch" Type="UInt">11</Property>
 				<Property Name="Destination[0].destName" Type="Str">Test_Exe.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../Test_Exe_Build/Caraya version test.exe</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
@@ -603,6 +630,46 @@
 				<Property Name="TgtF_productName" Type="Str">Test_Exe</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{E53EB6B0-2A02-4CAA-8D57-75D8B078C135}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">Test_Exe.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+			<Item Name="Test_PPL" Type="Packed Library">
+				<Property Name="Bld_buildCacheID" Type="Str">{603CFC45-7205-4867-BA73-0697A62D7703}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Test_PPL</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/Current projects/WS/ProjectBuilder_Test/Test_PPL</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{C5E3CE96-1220-441D-8322-E5C42762F613}</Property>
+				<Property Name="Bld_version.major" Type="UInt">1</Property>
+				<Property Name="Bld_version.patch" Type="UInt">11</Property>
+				<Property Name="Destination[0].destName" Type="Str">Test_PPL.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/Current projects/WS/ProjectBuilder_Test/Test_PPL/Test_PPL.lvlibp</Property>
+				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">/C/Current projects/WS/ProjectBuilder_Test/Test_PPL</Property>
+				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
+				<Property Name="Source[0].itemID" Type="Str">{E5F86746-35F4-452B-928D-F9D51DB9CE50}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Test_PPL library.lvlib</Property>
+				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[1].Library.atomicCopy" Type="Bool">true</Property>
+				<Property Name="Source[1].Library.LVLIBPtopLevel" Type="Bool">true</Property>
+				<Property Name="Source[1].preventRename" Type="Bool">true</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">Library</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">Danfoss</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Test_PPL</Property>
+				<Property Name="TgtF_internalName" Type="Str">Test_PPL</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2021 Danfoss</Property>
+				<Property Name="TgtF_productName" Type="Str">Test_PPL</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{8F133D37-8ACA-4C23-ABCC-E50A343BE194}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Test_PPL.lvlibp</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 		</Item>

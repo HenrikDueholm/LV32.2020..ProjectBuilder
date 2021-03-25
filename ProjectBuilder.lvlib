@@ -27,6 +27,7 @@
 		<Item Name="Convert String to Boolean.vi" Type="VI" URL="../Sub/Convert String to Boolean.vi"/>
 		<Item Name="Get Time Stamp.vi" Type="VI" URL="../Sub/Get Time Stamp.vi"/>
 		<Item Name="Extract Numbers from String.vi" Type="VI" URL="../Sub/Extract Numbers from String.vi"/>
+		<Item Name="Path_HDH ProjectBuilder Folder.vi" Type="VI" URL="../Sub/Path_HDH ProjectBuilder Folder.vi"/>
 	</Item>
 	<Item Name="Class" Type="Folder">
 		<Item Name="Action" Type="Folder">
